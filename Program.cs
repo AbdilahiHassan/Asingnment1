@@ -6,12 +6,23 @@ namespace Asingnment1
     {
         static void Main(string[] args)
         {
-            //Deleration 3 varible and inzl by 0
+            //Deleration 3 varible and inzl by 0?
             decimal number1 = 0;
             decimal number2 = 0;
-            //decimal num3 = number1 + number2;
+            decimal num3 = number1 + number2;
             String result = "";
+            //Reuseble method
+            int Res = Culculate(10, 20);
+            Console.ReadLine();
+        }
+        public static int Culculate(int number1, int number2)
 
+        {
+
+            //Deleration 3 varible and inzl by 0
+
+            decimal num3 = number1 + number2;
+            String result = "";
 
             Console.WriteLine(" Calculator ConsoleApp\r");
             Console.WriteLine("................................\n");
@@ -85,7 +96,7 @@ namespace Asingnment1
             //test
             do
             {
-                Console.WriteLine("If you want count again contue");
+                Console.WriteLine("If you want count again contue to count press Enter");
                 //Convert a intiger variable 
                 try
                 {
@@ -99,7 +110,7 @@ namespace Asingnment1
                 //Type second number that  you want countf
                 Console.WriteLine("Type Second number and press Enter");
                 //number2 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Press Enter to see Result");
+                Console.WriteLine("Press Enter to see  your Result");
                 //Convert a intiger variable 
                 try
                 {
@@ -162,10 +173,14 @@ namespace Asingnment1
 
             } while (result.Equals(number1 + number2));
 
-          
+
             string choice = Console.ReadLine();
             Console.ReadKey();
+            return number1 + number2;
         }
+        
+     
+
 
     }
 
