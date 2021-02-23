@@ -12,7 +12,7 @@ namespace Asingnment1
             decimal num3 = number1 + number2;
             String result = "";
             //Reuseble method
-            int Res = Culculate(10, 20);
+            int Reuse = Culculate(10, 20);
             Console.ReadLine();
         }
         public static int Culculate(int number1, int number2)
